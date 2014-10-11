@@ -35,8 +35,8 @@ def install_phantomjs
 end
 
 def setup_database
-	#puts `mysql -u root < setup_database.sh`
-	#puts `rake db:reset`
+	puts `mysql -u root < setup_database.sh`
+	puts `rake db:reset`
 	puts `rake db:setup`
 end
 
@@ -61,6 +61,6 @@ install_postgres
 #install_mongo
 install_phantomjs
 bundle_install
-#setup_database
+setup_database
 start_server
 install_packages
