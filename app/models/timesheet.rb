@@ -1,6 +1,6 @@
 class Timesheet < ActiveRecord::Base
     belongs_to :user
-
+	belongs_to :project
     validates :date, :timein, :timeout, :hours, :description, :payrate, :project, presence: true
     validate :timesheet_cannot_be_in_the_future, :timeout_cannot_be_before_timein, :date_is_not_in_pay_period, :timesheets_cannot_overlap
     
