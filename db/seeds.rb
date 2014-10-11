@@ -13,3 +13,5 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
     User.create(first_name: 'Admin', last_name: 'Admin', email: 'admin@rbdc.com', password: 'adminRBDC14!', role: 'admin', active: false)
+User.create(first_name: 'Andrew', last_name: 'Ferguson', payrate: 10, email: 'andrewf02@gmail.com', password: 'Easton12', role: 'user', active: true)
+    Project.create(name: 'SRA', budget: 65000)
